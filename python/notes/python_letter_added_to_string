@@ -1,0 +1,16 @@
+#the assignment opareter is not posiable in string
+#code:
+
+string = "abracadabra"
+position = int(input("Enter the position:"))
+value  = str(input("Enter the letter:"))
+string_left = string[0:position]
+string_right = string[position::]
+string = string_left + value + string_right
+print(string)
+
+output:
+
+Enter the position:5
+Enter the letter:k
+abrackadabra

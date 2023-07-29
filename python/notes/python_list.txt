@@ -1,0 +1,238 @@
+list in python.
+
+if we have a number string and float value if we want to group them together we use an array but in python some more oprion is there is called list.
+list is array of element of any data type, but in array we only store similar type of data it may be int str or float, but in list also we can strore int string, and float value but also we can mix them mix 
+
+
+for example 
+
+[1,2,3,4,5] -> int list
+['umesha','ramesha','hugger'] - str list
+[1,2,3,'umesha',7,89,'ramesha',1.2,34.4] 
+and list can also have a nested list i.e multi dimentional
+
+[
+	[],
+	[],
+	[],
+	[]
+] - 4d
+or
+[ [],[],[],[] ] - 4d
+
+
+list index is starting from 0 -- infinity
+[0,1,2,3,4,5,6......] - its a forword a indexing
+[.......-4,-3,-2,-1]  - its a backword indexing
+
+we can also acceses the partical element from the list ny using its index number 
+for if we want to accese the first element of the list then use the 0
+name_of_the_list[index_number_that we_want_acceses]
+
+ex:
+ number[1,2,3,4,5,6]  - 
+ int list of size 6 we can also get the size of the list by using    the len() built in function it return the length of the list.
+ 
+ number[0] -- it print the 1 in the terminal
+ 
+ if we accese the any element from the list means the original list can not be altered.
+ 
+ for ex:
+ number[1,2,3,4,5,6]
+ print(number[0]
+ print(number)
+ 
+ output: 1
+ 	 [1,2,3,4,5,6]
+ 
+ we also accese the element by by using the reverse indexing also from -1 to ....
+  for example
+  number = [1,2,3,4,5,6]
+  number[-1]
+   output : 6
+   
+  
+  in list we can also print the multiple value or range of values. by using a colon opareter(:)
+  list_name[starting_number : end_number]
+  because of the list is starting from 0 so list end at the n-1 element
+  if the end_number is 5 then it end at the 5-1=4th element.
+  
+  
+  number = [1,2,3,4,5,6]
+  print(number[0:5])
+  
+  output:
+  	1,2,3,4,5
+  	
+  [starting_number: ] --> it says that it print number from  starting number move up to end of the list.
+  [ :ending_number] --> it syas that it print the number from 0th index to ending_number of the list
+  
+ for example:
+ 
+ num = [1,2,3,4,5]
+ print(num[-1])
+ 
+ output: 5
+ 
+ num = [1,2,3,4,5]
+ print(num[-2])
+ 
+ output: 4
+ 
+  num = [1,2,3,4,5]
+ print(num[-1:])
+ 
+ output: 5,4,3,2,1
+ 
+ we also perform the many other operations also such as
+ sort the list.
+ 
+ 
+ append
+ remove
+ extend
+ del
+ insert
+ clear -- clear function will clear the entire list.so list became empty.
+ min
+ max
+ sum
+ 
+ etc
+ 
+ if we perfrom the appeded function it adds the new value the list at the end of the list.
+ and it desn't create the capy of the list for every append operation.
+ 
+ for example :
+ list_1 = []
+ list_1.append(1)
+ 
+ output: [1]
+   this is case it cannot create the capy of the list during the append opration it will modify the current list it self example: new = list_!.append this is not possiable(some insermation to be into the list )
+   
+   
+ insert function are use to insert the new element to the current list with the particular position.
+ the main deperence b/w the append and the insert is that the append function are use to append the new value to the list at the end of the list. but in case of the insert function we can insert the new value to the current list at a particular position like 0th position or 5th position etc...
+ 
+ for example:
+ num = [1,2,4,5,6]
+ num.insert(2,3)
+ print(num)
+ 
+ output: [1,2,3,4,5,6]
+ 
+   this is case it cannot create the capy of the list during the insert oparation  it will modify the currentlist itself for example: new = list_!.append this is not possiable(some insermation to be into the list )
+   
+   
+  remove function
+  the remove function are used to remove the particular element from the list.
+  after performing the remove oparation it will modify the current list itself so it will not create a capy of the list after performing the remove oparation.
+  
+  list_name.remove(name_of_the_element_to_remove)
+  
+  for example"
+  list_1 = [1,2,3,4,5,6]
+  list_1.remove(1)
+  print(list_1)
+  output: [2,3,4,5,6]
+  
+  
+  
+  pop function:
+  
+  the pop function are used to pop the lost element from the current list.
+  every pop oparation lost one element is poped out.
+  this function are also perfrom the oparation directly on the list.
+  
+  name_of_the_list.pop()
+  if we perfrom the pop() oparation by default lost element is taken to pop out.
+  if we want to pop out the particular element from the list thaen its index number has to provided as a argument to the pop function
+  
+  for example:
+  num = [1,2,3,4,5,6]
+  num.pop() //after the pop opration its not posiable to store the result in the another variable like num2 = num.pop() its not posiable 
+  print(num)
+  
+  output:
+  [1,2,3,4,5]
+  
+  in this case if we are not mension any of the element to the pop function it works likea first in lost out 
+  
+  num = [1,2,3,4,5,6]
+  num.pop(1)
+  print(num)
+  
+  output:
+  [1,3,4,5,6] the index number 1 elementis poped out.
+  
+  
+  
+  del function
+  
+  this function are used to delete the element in the list by mensioning the index number
+  for example:
+  num = [1,2,3,4,5]
+  del num[3:4]
+  
+  output this will delete the 3rd element 
+  3 denits the starting element of the delete oparation and 
+  4 denotes the endoing element oparation of the delete opration
+  the delete opration starting from starting_number to ending_number-1.
+  
+  so in this case starting number is 3 so del function will start deleteing the number from 3 and upto the 4-1 i.e 3. so that it will only delete the 3rd index number only.
+  
+  num = [1,2,3,4,5,6,7]
+  del  num[0:3]
+  
+  output:  [4,5,6,7]
+  
+  
+  extend function
+  
+  the extend function are used to add the multipule value to the list.
+  
+  for example :
+  num = [1,2,3]
+  num.extend([4,5,6,7,8,9])
+  print(num)
+  
+  output:
+  
+  [1,2,3,4,5,6,7,8,9]
+  
+  
+  min function:
+  
+  the min function are used to find out the minimum value of the list.
+  min function only return  the single value.
+  
+  max function 
+  
+  max function are used to find out the max value in the list
+  
+  
+   sum function
+   
+   the sum function are used to find out the sum all the element in the list.
+   
+   
+   sort function:
+   
+   the sort function are used to sort the element of the list iin the assending order 
+   sort function arrences the element of the list in assendgin order if we wont to arrenage in it in form of desinding order then we have to pass the desc as a argument to the sort function.
+   
+   
+   
+   so we can conculed that sort function is mutuable so we can add the new element to the list and delete the element of the list. and also we can perform the lot of other function like minmax insert append ... etc to modify the element of the list.
+   
+   
+  
+  
+  
+  
+  
+  
+  
+  
+ 
+ 

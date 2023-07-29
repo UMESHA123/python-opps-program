@@ -1,0 +1,26 @@
+# Calculate Student Grade
+
+# Input:
+# 123
+# Rahul
+# 3
+# 80
+# 70
+# 80
+#
+# Output:
+# 76
+# B
+#
+# Input:
+# 200
+# Asha
+# 4
+# 90
+# 90
+# 80
+# 60
+#
+# Output:
+# 80
+# A

@@ -1,0 +1,116 @@
+touple
+
+we know that list is a list of element itcan be diffenet data type it can be int str or flot etc 
+
+so we have anther type which is called tuples.
+so tuple is almost same as the list but the main differenece is tuple is immuutable but where has list a mutuable.
+it means that we cann't change the value of the tuple so tuple is immutable.
+mutuable menas we can chanege the value of the list so list is called mutable.
+we can change the value of the list or modify the list element by perfomring the some oparation like sort, insert, append, extened etc
+
+the tuple can denoted by using the open and closing braket like this () in that we can spesify the tuple of element.
+
+num = (1,2,3,4,5,6,7,8)
+
+we can read the value of the tuple like 
+
+print(num[0])
+
+output: 1
+
+we can't write the value into the tuple or replace the element of the tuple by onther element for example:
+
+num[0] = 1
+
+it gives the error message like tuple object can not support the item assenment.
+
+
+tuple support the some function like count function and other one is the ondex.
+
+the count function are used to count particular element that is how many times is repeated in th etuple for example:
+
+t = (1,2,3,4,5,6,1,1,1,1,1,1,1,1)
+
+n=t.count(1)
+print(n)
+
+
+the output is :
+9
+because in this case the 1 is repeted 9 times in the tuple.
+
+example 2:
+
+t = (1,2,3,4,5,6)
+
+n=t.count(2)
+print(n)
+
+output is:
+1 because in this case 2 is repetedonly one time in the list.
+
+
+
+index
+
+the index are used to fetch the particular element index value 
+
+
+the both index and the count function are called by using the dot opareter. 
+for example:
+
+t.index()
+t.count()
+
+if some appilication need the set of value cannot change that time we are going with the tuple.
+the main advantage of the tuple is the tuple iteration is so fater then the list. so that it will enhance the excusion of seed of the excuation.
+
+ 
+ tuple can be 1 dimentional 2 dimentional or multi dimention
+ 
+ 1d is like : (1,2,3,4,5)
+ 2d is like : ((1,2,3,4),(3,2,3,2,))
+ multidimentional like: 
+ (
+ (),
+ (),
+ (),
+ .
+ .
+ .
+ .
+ .
+ .
+ ()
+ )
+ 
+ and tuple can also be int data type string data type or we can also mix it
+ for example:
+ 
+ t = tuple(1,2,3,4) -- data type is of int.
+ t = tuple("umesha","ramesha","hugger") string data type.
+ t = tuple(2.1,3.2,4.2) data type is of float.
+ 
+ this also work some for other dimention of the tuple also like 2d and multidimentional .
+ 
+ 
+ example:
+ 
+ t = ((2,3,),(3,22),(5,123,12123.2),("umesha"))
+print(t)
+
+output: tuple contained the diferent type of data and which is of multidimentional.
+((2, 3), (3, 22), (5, 123, 12123.2), 'umesha')
+ 
+ example:
+ 
+ t = ((2,3,),(3,22),(5.2,123.1,12123.2))
+print(t)
+ 
+ 
+ output:
+ 
+ ((2, 3), (3, 22), (5.2, 123.1, 12123.2))
+ 
+ 
+
